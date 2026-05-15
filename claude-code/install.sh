@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_URL="https://github.com/eximiaco/ai-playbook"
+REPO_URL="https://github.com/eximiaco/engenharia-com-ia-do-jeito-certo"
 BRANCH="main"
 
 # If running from a local clone, use it; otherwise clone to a temp dir.
