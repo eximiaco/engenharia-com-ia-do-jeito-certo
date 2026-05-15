@@ -18,13 +18,13 @@ Requer [`gh` CLI](https://cli.github.com/) autenticado (`gh auth login`).
 **Global** — disponível em todas as sessões do Claude Code:
 
 ```bash
-gh api repos/eximiaco/ai-playbook/contents/claude-code/install.sh --jq '.content' | base64 -d | bash
+gh api repos/eximiaco/engenharia-com-ia-do-jeito-certo/contents/claude-code/install.sh --jq '.content' | base64 -d | bash
 ```
 
 **Project-local** — execute na raiz do projeto:
 
 ```bash
-gh api repos/eximiaco/ai-playbook/contents/claude-code/install.sh --jq '.content' | base64 -d | bash -s .
+gh api repos/eximiaco/engenharia-com-ia-do-jeito-certo/contents/claude-code/install.sh --jq '.content' | base64 -d | bash -s .
 ```
 
 Após instalar, rode `/reload-plugins` no Claude Code.
