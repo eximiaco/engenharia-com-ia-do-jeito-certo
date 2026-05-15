@@ -13,18 +13,16 @@ Coleção de skills para Claude Code.
 
 ## Instalação
 
-Requer [`gh` CLI](https://cli.github.com/) autenticado (`gh auth login`).
-
 **Global** — disponível em todas as sessões do Claude Code:
 
 ```bash
-gh api repos/eximiaco/engenharia-com-ia-do-jeito-certo/contents/claude-code/install.sh --jq '.content' | base64 -d | bash
+curl -fsSL https://raw.githubusercontent.com/eximiaco/engenharia-com-ia-do-jeito-certo/main/claude-code/install.sh | bash
 ```
 
 **Project-local** — execute na raiz do projeto:
 
 ```bash
-gh api repos/eximiaco/engenharia-com-ia-do-jeito-certo/contents/claude-code/install.sh --jq '.content' | base64 -d | bash -s .
+curl -fsSL https://raw.githubusercontent.com/eximiaco/engenharia-com-ia-do-jeito-certo/main/claude-code/install.sh | bash -s .
 ```
 
 Após instalar, rode `/reload-plugins` no Claude Code.
